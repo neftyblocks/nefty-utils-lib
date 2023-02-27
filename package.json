@@ -19,7 +19,8 @@
     "scripts": {
         "dev": "cd lib && pnpm dev",
         "build": "cd lib && pnpm build",
-        "play": "pnpm build && cd playground && pnpm dev"
+        "play": "pnpm build && cd playground && pnpm dev",
+        "pub": "pnpm build && cd lib && pnpm publish"
     },
     "packageManager": "pnpm@7.25.0",
     "devDependencies": {
