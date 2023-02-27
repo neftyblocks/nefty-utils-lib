@@ -17,8 +17,10 @@ importers:
   lib:
     specifiers:
       '@mvdschee/use': ^0.0.29
+      universal-authenticator-library: ^0.3.0
     dependencies:
       '@mvdschee/use': 0.0.29
+      universal-authenticator-library: 0.3.0
 
   playground:
     specifiers:
@@ -877,6 +879,10 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  /universal-authenticator-library/0.3.0:
+    resolution: {integrity: sha512-G/D9S1/b0fwRHPWHi+bPKjqHb/A5BqiOQ3k/R3MYPQQa0yxStn+Gf3oZjKKFnj9ZhELZ6FHOFRTXzcn/ggxXDg==}
+    dev: false
 
   /universalify/0.1.2:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}

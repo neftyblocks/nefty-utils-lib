@@ -30,6 +30,10 @@ import { ... } from '@nefty/use';
 
 # Methodes
 
+### Analytics
+
+-   [usePosthog](#usePosthog) Posthog analytics
+
 ### Network
 
 -   [useFetch](#useFetch) Some extra ease of use functions on top of `fetch`, like instant headers, response timing and body and query parsing.
@@ -51,6 +55,31 @@ import { ... } from '@nefty/use';
 ### Format
 
 -   [useTokenDisplay](#useTokenDisplay) format a number to a string display, with a max of 8 decimals.
+
+### Wallet
+
+-   [WalletUAL](#WalletUAL) Wallet management for UAL.
+
+## usePosthog
+
+Posthog analytics
+
+```ts
+import { usePosthog } from '@nefty/use';
+
+// init with extra options
+const analytics = usePosthog({
+    version: 'v2',
+});
+
+// track an event
+analytics.track('event-name', {
+    // data
+});
+
+// identify a user
+analytics.identify('user-id');
+```
 
 ## useFetch
 
@@ -185,4 +214,22 @@ import { useTokenDisplay } from '@nefty/use';
 useTokenDisplay(100, 2); // returns 100
 
 useTokenDisplay(100, 2, true); // returns 100.00
+```
+
+## WalletUAL
+
+Wallet management for UAL. not going to go in to much details here, but you can find more info on the [UAL](https://github.com/EOSIO/universal-authenticator-library)
+
+```ts
+import { WalletUAL, WalletUser } from '@nefty/use';
+
+const callback = (users: WalletUser[]): void => {};
+
+const wallet_anchor = new Anchor([network], { appName });
+const wallet_wax = new Wax([network]);
+const wallet_wombat = new Wombat([network], { appName });
+
+const provider = new WalletUAL(callback, [network], appName, [wallet_anchor, wallet_wax, wallet_wombat]);
+
+provider.init();
 ```

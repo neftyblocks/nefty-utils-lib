@@ -1,2 +1,6 @@
+// external dependencies
 export * from '@mvdschee/use';
-export * from './methodes/format';
+
+// internal methods
+export * from './methodes/analytics';
+export * from './methodes/wallet';
