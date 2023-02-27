@@ -1,0 +1,33 @@
+:root {
+    --nefty-font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: block;
+    box-sizing: border-box;
+    min-height: 100vh;
+    height: 100%;
+    padding: 20px;
+    margin: 0;
+
+    * {
+        font-family: var(--nefty-font-family);
+        margin: 0;
+        line-height: 1.2;
+    }
+}
+
+h1 {
+    font-size: 34px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+#neftyblocks-blend {
+    padding: 20px;
+}

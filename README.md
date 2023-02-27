@@ -15,13 +15,13 @@ It's all typed so you should be good to go.
 ## Installation
 
 ```bash
-yarn add @mvdschee/use
+yarn add @nefty/use
 ```
 
 ## Usage
 
 ```js
-import { useFetch } from '@mvdschee/use';
+import { useFetch } from '@nefty/use';
 ```
 
 # Methodes
@@ -56,7 +56,7 @@ No need for a `try catch`, this is done iternaly.
 
 ```ts
 // GET request
-import { useFetch } from '@mvdschee/use';
+import { useFetch } from '@nefty/use';
 
 const { data, error } = await useFetch<DataType>('/api/data', {
     baseUrl: 'https://example.com',
@@ -80,7 +80,7 @@ else {
 
 ```ts
 // POST request
-import { useFetch } from '@mvdschee/use';
+import { useFetch } from '@nefty/use';
 
 const { data, error } = await useFetch<DataType>('/api/data', {
     baseUrl: 'https://example.com',
@@ -104,7 +104,7 @@ else {
 
 ```ts
 // All options
-import { useFetch } from '@mvdschee/use';
+import { useFetch } from '@nefty/use';
 
 const { data, error, header, time } = await useFetch<DataType>('/api/data', {
     baseUrl: 'https://example.com',
@@ -119,7 +119,7 @@ console.log(time); // returns the time it took to fetch the data
 SWR is a clientside caching (Stall While Revalidate) just to save some bytes
 
 ```ts
-import { useSWR } from '@mvdschee/use';
+import { useSWR } from '@nefty/use';
 
 // default timeout is 10 minutes
 await useSWR(`unique-name`, () => getData(), 600_000);
@@ -130,7 +130,7 @@ await useSWR(`unique-name`, () => getData(), 600_000);
 Fast and beautiful dynamic avatar based on account name
 
 ```ts
-import { useAvatar } from '@mvdschee/use';
+import { useAvatar } from '@nefty/use';
 
 useAvatar('example'); // returns a svg as a string
 ```
@@ -138,10 +138,10 @@ useAvatar('example'); // returns a svg as a string
 ## useMarkdown
 
 Fast and compact markdown parser
-see [mvdschee/drawdown](https://github.com/mvdschee/drawdown) for more info
+see [nefty/drawdown](https://github.com/nefty/drawdown) for more info
 
 ```ts
-import { useMarkdown } from '@mvdschee/use';
+import { useMarkdown } from '@nefty/use';
 
 useMarkdown('example'); // returns a string: <p>example</p>
 
@@ -154,7 +154,7 @@ useMarkdown('example', true, 'class-name'); // returns a DOM element: <div class
 String to hsla color
 
 ```ts
-import { useColor } from '@mvdschee/use';
+import { useColor } from '@nefty/use';
 
 useColor('example'); // returns a hsla color string
 ```
@@ -164,7 +164,7 @@ useColor('example'); // returns a hsla color string
 Countdown displayer, in DHMS format
 
 ```ts
-import { useCountDown } from '@mvdschee/use';
+import { useCountDown } from '@nefty/use';
 
 // (start time, current time)
 useCountDown(new Date().valueOf() - 1000, new Date().valueOf()); // returns 1S
@@ -176,7 +176,7 @@ Format a number to a string display, with a max of 8 decimals (default)
 and optional fixed decimals (default false)
 
 ```ts
-import { useTokenDisplay } from '@mvdschee/use';
+import { useTokenDisplay } from '@nefty/use';
 
 useTokenDisplay(100, 2); // returns 100
 
@@ -186,6 +186,22 @@ useTokenDisplay(100, 2, true); // returns 100.00
 # 💻 Development
 
 -   Clone this repository
--   Run `yarn` to install dependencies
--   Run `yarn build` to build the library and rebuild after a change, I don't have a nice setup for this yet
--   Run `yarn dev` to start the development server
+-   Run `pnpm install` to install dependencies
+-   Run `pnpm build` to build the library and rebuild after a change, I don't have a nice setup for this yet
+-   Run `pnpm dev` to start the development server
+
+# I like pnpm just not the command (let's rename to `P`)
+
+1. Open the `~/.zshrc` file in your preferred text editor.
+
+2. Next, add your alias to the end of the file, save the changes and close the editor.
+
+```bash
+alias p='pnpm'
+```
+
+3. Run the below source command, which does not provide output, but sources the `~/.zshrc` file to make the alias available in your current shell. `source ~/.zshrc`
+
+```bash
+source ~/.zshrc
+```

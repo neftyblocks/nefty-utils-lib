@@ -1,0 +1,50 @@
+{
+    "name": "@nefty/use",
+    "description": "A collection of methodes used by NeftyBlocks",
+    "keywords": [
+        "use",
+        "methods",
+        "utils",
+        "typescript"
+    ],
+    "version": "0.0.1",
+    "license": "MIT",
+    "private": false,
+    "author": {
+        "name": "NeftyBlocks",
+        "email": "info@neftyblocks.com",
+        "url": "https://neftyblocks.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/neftyblocks/use.git"
+    },
+    "bugs": {
+        "url": "https://github.com/neftyblocks/use/issues"
+    },
+    "homepage": "https://github.com/neftyblocks/use#readme",
+    "contributors": [
+        "Max van der Schee"
+    ],
+    "types": "dist/main.d.ts",
+    "main": "dist/main.cjs",
+    "module": "dist/main.mjs",
+    "exports": {
+        ".": {
+            "types": "./dist/main.d.ts",
+            "require": "./dist/main.cjs",
+            "default": "./dist/main.mjs"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@mvdschee/use": "^0.0.29"
+    },
+    "devDependencies": {
+        "vite-plugin-dts": "^2.0.2"
+    }
+}

@@ -1,46 +1,29 @@
 {
-    "name": "@mvdschee/use",
-    "description": "A collection of methodes I use daily",
-    "keywords": [
-        "use",
-        "methods",
-        "utils",
-        "typescript"
-    ],
-    "version": "0.0.29",
+    "name": "use",
+    "private": true,
     "license": "MIT",
-    "private": false,
     "author": {
-        "name": "Max van der Schee",
-        "url": "https://maxvanderschee.nl"
+        "name": "NeftyBlocks",
+        "email": "info@neftyblocks.com",
+        "url": "https://neftyblocks.com/"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mvdschee/use.git"
+        "url": "git+https://github.com/neftyblocks/use.git"
     },
-    "bugs": {
-        "url": "https://github.com/mvdschee/use/issues"
-    },
-    "homepage": "https://github.com/mvdschee/use#readme",
     "contributors": [
         "Max van der Schee"
     ],
-    "types": "lib/main.d.ts",
-    "main": "lib/main.cjs",
-    "module": "lib/main.mjs",
-    "exports": {
-        ".": {
-            "types": "./lib/main.d.ts",
-            "require": "./lib/main.cjs",
-            "default": "./lib/main.mjs"
-        }
-    },
+    "type": "module",
     "scripts": {
-        "build": "unbuild",
-        "dev": "wds"
+        "dev": "cd lib && pnpm dev",
+        "build": "cd lib && pnpm build",
+        "play": "pnpm build && cd playground && pnpm dev"
     },
+    "packageManager": "pnpm@7.25.0",
     "devDependencies": {
-        "unbuild": "^1.0.2",
-        "@web/dev-server": "^0.1.35"
+        "vite": "^4.1.3",
+        "typescript": "^4.9.5",
+        "sass": "^1.58.3"
     }
 }
