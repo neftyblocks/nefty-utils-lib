@@ -34,6 +34,11 @@ import { ... } from '@nefty/use';
 
 -   [usePosthog](#usePosthog) Posthog analytics
 
+# Assets
+
+-   [useAssetData](#useAssetData) Get data from a template (WAX api only)
+-   [useImageUrl](#useImageUrl) Create resized image url from a CID or url (works only for allowed domains)
+
 ### Network
 
 -   [useFetch](#useFetch) Some extra ease of use functions on top of `fetch`, like instant headers, response timing and body and query parsing.
@@ -79,6 +84,34 @@ analytics.track('event-name', {
 
 // identify a user
 analytics.identify('user-id');
+```
+
+## useAssetData
+
+Get data from a template (WAX api only)
+
+```ts
+import { useAssetData } from '@nefty/use';
+
+const template = {...};
+
+const asset = useAssetData(template);
+
+if(asset) {
+    const { name, img } = asset;
+}
+
+```
+
+## useImageUrl
+
+Create resized image url from a CID or url (works only for allowed domains)
+
+```ts
+import { useImageUrl } from '@nefty/use';
+
+// resize to 100x100 and make it static
+useImageUrl('https://example.com/image.png', 100, true);
 ```
 
 ## useFetch
