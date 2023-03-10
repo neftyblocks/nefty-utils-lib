@@ -254,7 +254,7 @@ useTokenDisplay(100, 2, true); // returns 100.00
 Wallet management for UAL. not going to go in to much details here, but you can find more info on the [UAL](https://github.com/EOSIO/universal-authenticator-library)
 
 ```ts
-import { WalletUAL, WalletUser } from '@nefty/use';
+import { WalletUAL, WalletUser } from '@nefty/use/wallet';
 
 const callback = (users: WalletUser[]): void => {};
 

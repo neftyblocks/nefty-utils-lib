@@ -6,9 +6,9 @@ export default defineConfig({
     plugins: [dts()],
     build: {
         lib: {
-            entry: 'src/main.ts',
+            entry: ['src/main.ts', 'src/wallet.ts'],
             formats: ['es', 'cjs'],
-            fileName: (format) => `main.${format}.js`,
+            fileName: (format, entryName) => `${entryName}.${format}.js`,
         },
     },
 });

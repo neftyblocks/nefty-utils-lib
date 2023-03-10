@@ -1,11 +1,5 @@
 import { Authenticator, Chain, UAL, User } from 'universal-authenticator-library';
 
-// --------------------------------------------------
-// WALLET METHODES
-// --------------------------------------------------
-// Includes:
-// WalletUAL
-
 export interface WalletUser extends User {
     accountName: string;
     requestPermission: string;
