@@ -35,7 +35,7 @@
             "require": "./dist/main.cjs.js",
             "default": "./dist/main.es.js"
         },
-        "./wallet": {
+        "./dist/wallet": {
             "types": "./dist/wallet.d.ts",
             "require": "./dist/wallet.cjs.js",
             "default": "./dist/wallet.es.js"
