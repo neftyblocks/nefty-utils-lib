@@ -20,8 +20,8 @@ importers:
   lib:
     dependencies:
       '@mvdschee/use':
-        specifier: ^0.0.30
-        version: 0.0.30
+        specifier: ^0.1.0
+        version: 0.1.0
       universal-authenticator-library:
         specifier: ^0.3.0
         version: 0.3.0
@@ -306,8 +306,8 @@ packages:
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
     dev: true
 
-  /@mvdschee/use@0.0.30:
-    resolution: {integrity: sha512-0modP+xmZ8qUeqbvw6S+snc3ZuN0VCc4Fw/lhxxFqrFeg2ZR5udorHypkgLI+j1wWhOZGURdaHWbrTJN7RceJg==}
+  /@mvdschee/use@0.1.0:
+    resolution: {integrity: sha512-EeD7/TptsGTbOtETRrAVnFbk+QhyUxjWb98LnVqcJMZGrc2QDVP2xE4LI31UV628j12GjvjGhSVfVRtaUL0RgQ==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:

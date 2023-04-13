@@ -7,7 +7,7 @@
         "utils",
         "typescript"
     ],
-    "version": "0.1.6",
+    "version": "0.1.7",
     "license": "MIT",
     "private": false,
     "author": {
@@ -47,7 +47,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@mvdschee/use": "^0.0.30",
+        "@mvdschee/use": "^0.1.0",
         "universal-authenticator-library": "^0.3.0"
     }
 }
