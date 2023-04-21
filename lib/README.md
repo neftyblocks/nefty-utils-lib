@@ -201,7 +201,7 @@ await useSWR(`unique-name`, () => getData(), 600_000);
 Retry useFetch a certain amount of times with a delay between each try.
 
 ```ts
-import { useRetry } from '@mvdschee/use';
+import { useRetry } from '@nefty/use';
 
 const { data, error, header, time } = await useRetry({
     retries: 3, // default 3
