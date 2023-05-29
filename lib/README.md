@@ -187,13 +187,15 @@ console.log(time); // returns the time it took to fetch the data
 
 ## useSWR
 
-SWR is a clientside caching (Stall While Revalidate) just to save some bytes
+SWR is a clientside caching (Stall While Revalidate) just to save some bytes and a way to clear the cache and have a new dataset.
 
 ```ts
 import { useSWR } from '@nefty/use';
 
+const forceRefresh = false;
+
 // default timeout is 10 minutes
-await useSWR(`unique-name`, () => getData(), 600_000);
+await useSWR(`unique-name`, () => getData(), 600_000, forceRefresh);
 ```
 
 ## useRetry
