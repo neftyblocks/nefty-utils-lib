@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -20,8 +24,8 @@ importers:
   lib:
     dependencies:
       '@mvdschee/use':
-        specifier: ^0.1.5
-        version: 0.1.5
+        specifier: ^0.1.6
+        version: 0.1.6
       universal-authenticator-library:
         specifier: ^0.3.0
         version: 0.3.0
@@ -306,8 +310,8 @@ packages:
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
     dev: true
 
-  /@mvdschee/use@0.1.5:
-    resolution: {integrity: sha512-GzTWWFHyCGhQJSYrzMuxaaYFuf7m7RBX1rLVAO0jqO9c17HwE96CFE1uEIdMb9ayG5CdeRs0sjx6Qz+791IM3A==}
+  /@mvdschee/use@0.1.6:
+    resolution: {integrity: sha512-A41UGlr8DWuLQb2li2EMCwfjkhJ6YE4NzIMC6pxNYEGQCvG9O8DLy3XjZBFtKmjEnxDN+AFWPvsu9lvAVqEZ9w==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
