@@ -24,10 +24,10 @@ importers:
   lib:
     dependencies:
       '@mvdschee/use':
-        specifier: ^0.1.6
-        version: 0.1.6
+        specifier: 0.1.7
+        version: 0.1.7
       universal-authenticator-library:
-        specifier: ^0.3.0
+        specifier: 0.3.0
         version: 0.3.0
 
   playground:
@@ -310,8 +310,8 @@ packages:
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
     dev: true
 
-  /@mvdschee/use@0.1.6:
-    resolution: {integrity: sha512-A41UGlr8DWuLQb2li2EMCwfjkhJ6YE4NzIMC6pxNYEGQCvG9O8DLy3XjZBFtKmjEnxDN+AFWPvsu9lvAVqEZ9w==}
+  /@mvdschee/use@0.1.7:
+    resolution: {integrity: sha512-GrqB1KwS7pzB+aV7RGi0U1ZPUuxgtXcox3fGUytv3seuRfG1n+hiRNczFrM4cBcZP1seC8I8JFlozfLc04YRaA==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
