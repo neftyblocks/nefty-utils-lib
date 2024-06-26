@@ -47,7 +47,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@mvdschee/use": "0.1.9",
+        "@mvdschee/use": "0.2.0",
         "universal-authenticator-library": "0.3.0"
     }
 }
