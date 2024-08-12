@@ -7,7 +7,7 @@
         "utils",
         "typescript"
     ],
-    "version": "0.2.0",
+    "version": "0.2.1",
     "license": "MIT",
     "private": false,
     "author": {
@@ -26,6 +26,7 @@
     "contributors": [
         "Max van der Schee"
     ],
+    "type": "module",
     "types": "dist/main.d.ts",
     "main": "dist/main.cjs.js",
     "module": "dist/main.es.js",
@@ -33,12 +34,12 @@
         ".": {
             "types": "./dist/main.d.ts",
             "require": "./dist/main.cjs.js",
-            "default": "./dist/main.es.js"
+            "import": "./dist/main.es.js"
         },
         "./dist/wallet": {
             "types": "./dist/wallet.d.ts",
             "require": "./dist/wallet.cjs.js",
-            "default": "./dist/wallet.es.js"
+            "import": "./dist/wallet.es.js"
         }
     },
     "scripts": {
