@@ -7,7 +7,7 @@
         "utils",
         "typescript"
     ],
-    "version": "0.2.1",
+    "version": "0.3.0",
     "license": "MIT",
     "private": false,
     "author": {
@@ -28,18 +28,18 @@
     ],
     "type": "module",
     "types": "dist/main.d.ts",
-    "main": "dist/main.cjs.js",
-    "module": "dist/main.es.js",
+    "main": "dist/main.cjs",
+    "module": "dist/main.mjs",
     "exports": {
         ".": {
             "types": "./dist/main.d.ts",
-            "require": "./dist/main.cjs.js",
-            "import": "./dist/main.es.js"
+            "require": "./dist/main.cjs",
+            "import": "./dist/main.mjs"
         },
         "./dist/wallet": {
             "types": "./dist/wallet.d.ts",
-            "require": "./dist/wallet.cjs.js",
-            "import": "./dist/wallet.es.js"
+            "require": "./dist/wallet.cjs",
+            "import": "./dist/wallet.mjs"
         }
     },
     "scripts": {
@@ -48,7 +48,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@mvdschee/use": "0.2.0",
+        "@mvdschee/use": "0.3.0",
         "universal-authenticator-library": "0.3.0"
     }
 }

@@ -66,6 +66,10 @@ import { ... } from '@nefty/use';
 
 -   [useTokenDisplay](#useTokenDisplay) format a number to a string display, with a max of 8 decimals.
 
+### Misc
+
+-   [useLog](#useLog) Log to console with a specified type and timestamp all with color coding for better readability.
+
 ### Wallet
 
 -   [WalletUAL](#WalletUAL) Wallet management for UAL.
@@ -121,7 +125,7 @@ useImageUrl('https://example.com/image.png', 100, true);
 
 ## useFetch
 
-Small wrapper around native fetch to stringify body and parse parms as an object (not doing polyfilling)
+Small wrapper around native fetch to stringify body and parse params as an object (not doing polyfilling)
 
 No need for a `try catch`, this is done iternaly.
 
@@ -155,7 +159,7 @@ import { useFetch } from '@nefty/use';
 
 const { data, error } = await useFetch<DataType>('/api/data', {
     baseUrl: 'https://example.com',
-    methode: 'POST',
+    method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
@@ -299,6 +303,22 @@ import { useTokenDisplay } from '@nefty/use';
 useTokenDisplay(100, 2); // returns 100
 
 useTokenDisplay(100, 2, true); // returns 100.00
+```
+
+## useLog
+
+Log to console with a specified type and timestamp all with color coding for better readability
+
+```ts
+import { useLog } from '@mvdschee/use';
+
+useLog('example', 'info'); // returns 2024-08-12 11:54:36 [INFO] example
+
+useLog('example', 'warn'); // returns 2024-08-12 11:54:36 [WARN] example
+
+useLog('example', 'error'); // returns 2024-08-12 11:54:36 [ERROR] example
+
+useLog('example', 'status'); // returns 2024-08-12 11:54:36 example
 ```
 
 ## WalletUAL
