@@ -27,8 +27,8 @@ importers:
   lib:
     dependencies:
       '@mvdschee/use':
-        specifier: 0.3.2
-        version: 0.3.2
+        specifier: 0.3.3
+        version: 0.3.3
       universal-authenticator-library:
         specifier: 0.3.0
         version: 0.3.0
@@ -265,8 +265,8 @@ packages:
   '@microsoft/tsdoc@0.15.0':
     resolution: {integrity: sha512-HZpPoABogPvjeJOdzCOSJsXeL/SMCBgBZMVC3X3d7YYp2gf31MfxhUoYUNwf1ERPJOnQc0wkFn9trqI6ZEdZuA==}
 
-  '@mvdschee/use@0.3.2':
-    resolution: {integrity: sha512-g/aUX99bAWwQ0boAzOJCGwHP6SgqQhhpaXCz7Ff7lzsi8cezbHA4Q7VXhYGp0mljD39/lb47Ym0xGQivUpedog==}
+  '@mvdschee/use@0.3.3':
+    resolution: {integrity: sha512-Ex+9YVXjCBFdKbPe8ykE3EGGqi19ZauXpFqueQICpILJZgpI1+ZaLqkplCLvtCxFzwVhm5As7BxsfV19dPmCTg==}
 
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
@@ -983,7 +983,7 @@ snapshots:
 
   '@microsoft/tsdoc@0.15.0': {}
 
-  '@mvdschee/use@0.3.2': {}
+  '@mvdschee/use@0.3.3': {}
 
   '@rollup/pluginutils@5.1.0(rollup@4.20.0)':
     dependencies:
